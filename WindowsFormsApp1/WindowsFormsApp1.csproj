@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\PdfiumViewer.Native.x86_64.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.no_v8-no_xfa.props" Condition="Exists('..\packages\PdfiumViewer.Native.x86_64.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.no_v8-no_xfa.props')" />
+  <Import Project="..\packages\PdfiumViewer.Native.x86.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.no_v8-no_xfa.props" Condition="Exists('..\packages\PdfiumViewer.Native.x86.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.no_v8-no_xfa.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ADC6AD9-A501-46E1-A89E-CCC20949227F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaSayfa.Designer.cs">
+      <DependentUpon>anaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arama.Designer.cs">
+      <DependentUpon>arama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AramaAraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AramaAraForm.Designer.cs">
+      <DependentUpon>AramaAraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detayliAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detayliAra.Designer.cs">
+      <DependentUpon>detayliAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="k_arama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="k_arama.Designer.cs">
+      <DependentUpon>k_arama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="k_detayli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="k_detayli.Designer.cs">
+      <DependentUpon>k_detayli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mAraform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mAraform.Designer.cs">
+      <DependentUpon>mAraform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pdfOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pdfOp.Designer.cs">
+      <DependentUpon>pdfOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tezEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tezEkle.Designer.cs">
+      <DependentUpon>tezEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yAraform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yAraform.Designer.cs">
+      <DependentUpon>yAraform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yazar_danisman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yazar_danisman.Designer.cs">
+      <DependentUpon>yazar_danisman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="y_goruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="y_goruntule.Designer.cs">
+      <DependentUpon>y_goruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="projectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="anaSayfa.resx">
+      <DependentUpon>anaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="arama.resx">
+      <DependentUpon>arama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AramaAraForm.resx">
+      <DependentUpon>AramaAraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detayliAra.resx">
+      <DependentUpon>detayliAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="k_arama.resx">
+      <DependentUpon>k_arama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="k_detayli.resx">
+      <DependentUpon>k_detayli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mAraform.resx">
+      <DependentUpon>mAraform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pdfOp.resx">
+      <DependentUpon>pdfOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tezEkle.resx">
+      <DependentUpon>tezEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yAraform.resx">
+      <DependentUpon>yAraform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yazar_danisman.resx">
+      <DependentUpon>yazar_danisman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="y_goruntule.resx">
+      <DependentUpon>y_goruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="projectDataSet.xsc">
+      <DependentUpon>projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectDataSet.xss">
+      <DependentUpon>projectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\PdfiumViewer.Native.x86.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.no_v8-no_xfa.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PdfiumViewer.Native.x86.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86.no_v8-no_xfa.props'))" />
+    <Error Condition="!Exists('..\packages\PdfiumViewer.Native.x86_64.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.no_v8-no_xfa.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\PdfiumViewer.Native.x86_64.no_v8-no_xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.no_v8-no_xfa.props'))" />
+  </Target>
+</Project>
